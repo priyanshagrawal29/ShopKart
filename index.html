@@ -597,8 +597,8 @@ textarea{
             <h2>Here are our top products!</h2>
             
                 <select id="gender" onchange="display()">
-                    <option value="Products">Men</option>
-                    <option value="Grocery">Women</option>                    
+                    <option value="Products">Products</option>
+                    <option value="Grocery">Grocery</option>                    
                 </select>
 
                 <div class="arrow-cont"><div class="arrow"></div>
@@ -936,7 +936,7 @@ women.style.display="none"
 var gender = document.getElementById("gender");
 
 function display(){
-    if(gender.value=="Women"){
+    if(gender.value=="Grocery"){
         men.style.display="none";
         women.style.display="block";
     }
