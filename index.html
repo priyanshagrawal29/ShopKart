@@ -924,20 +924,20 @@ function menu(){
     }
 }
 
-var men = document.getElementById("products");
-var women = document.getElementById("grocery");
+var products = document.getElementById("products");
+var grocery = document.getElementById("grocery");
 
 women.style.display="none"
 var gender = document.getElementById("gender");
 
 function display(){
     if(gender.value=="Grocery"){
-        men.style.display="none";
-        women.style.display="block";
+        products.style.display="none";
+        grocery.style.display="block";
     }
     else{
-        women.style.display="none";
-        men.style.display="block";
+        grocery.style.display="none";
+        products.style.display="block";
     }
 }
 </script>
