@@ -638,7 +638,7 @@ textarea{
             <h2>Here are our top products!</h2>
             
                 <select id="gender" onchange="display()">
-                    <option value="Products">Products</option>
+                    <option value="LifeStyles">Lifestyles</option>
                     <option value="Grocery">Grocery</option>                    
                 </select>
 
@@ -649,7 +649,7 @@ textarea{
            
              <br> <br>
 
-            <div id="products">
+            <div id="lifestyles">
                 <span>T-Shirts(Large Size)</span>
             <div class="img-box">
                 <div class="product">
@@ -962,22 +962,23 @@ function menu(){
     }
 }
 
-var products = document.getElementById("products");
-var grocery = document.getElementById("grocery");
+var men = document.getElementById("men");
+var women = document.getElementById("women");
 
 women.style.display="none"
 var gender = document.getElementById("gender");
 
 function display(){
     if(gender.value=="Grocery"){
-        products.style.display="none";
-        grocery.style.display="block";
+        men.style.display="none";
+        women.style.display="block";
     }
     else{
-        grocery.style.display="none";
-        products.style.display="block";
+        women.style.display="none";
+        men.style.display="block";
     }
 }
+
 </script>
 </body>
 </html>
