@@ -887,11 +887,15 @@ textarea{
         </footer>
     </div>
     <script>
-        
+            
 var btn = document.getElementById("menu");
 btn.style.transform= "translate(-100%)"
 btn.style.background="cyan"
-
+ window.oncontextmenu = function () {
+                console.log("Right Click Disabled");
+                alert("Warning!😒 Right Click Disabled");
+                     return false;
+                }
 function menu(){
 
     if(btn.style.transform == "translate(-100%)"){
